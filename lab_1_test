@@ -46,6 +46,9 @@ WHERE (name LIKE 'D%' OR name LIKE 'M%') AND LENGTH(name) > 3
 
 
 10.Вывести на экран названия продуктов, у которых дата начала продаж – не позднее 2012 года.
+SELECT name, sellstartdate FROM production.product
+WHERE sellstartdate <= '2012-12-31'	
+
 
 11.Найти и вывести на экран названия всех подкатегорий товаров.
 
